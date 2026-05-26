@@ -7,6 +7,7 @@ parallel-jobs = 1
 # you can use rvmm-config-gen to generate a config
 
 [YouTube]
+enabled = false
 build-mode = "both"
 excluded-patches = ""
 included-patches = ""
@@ -19,6 +20,7 @@ uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 
 [Music]
+enabled = false
 build-mode = "both"
 arch = "both"
 patches-source = "MorpheApp/morphe-patches"
@@ -29,13 +31,17 @@ uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 
 [GooglePhotos]
-enabled = false
+enabled = true
 build-mode = "both"
 arch = "both"
 version = "auto"
+patches-source = "RookieEnough/De-Vanced"
+cli-source = "MorpheApp/morphe-cli"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
 uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.photos"
+included-patches = "'Spoof features' 'Fix selected account persistence'"
+
 
 [Spotify]
 enabled = false
